@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="./style.css"/>
+    <title>Gustaf Swansen</title>
+</head>
+
+<body>
+    <div>
+        <table>
+            <tr>
+                <td><button onclick="About() ">About</button></td>
+                <td><button onclick="Projects() ">Projects</button></td>
+                <td><button onclick="Resume() ">Resume</button></td>
+            </tr>
+        </table>
+    </div>
+    <div id= "offset">
+        &nbsp
+    </div>
+    <div>
+        <section class = "container">
+            <div class = "one">
+                <h2>Microprocessor Connect Four</h2>
+                <p>For the final Project of my Microprocessor's class in the 
+                    fall of 2018, my team and I decided to create Connect Four.
+                    This involved programming our STM32 microcontroller, designing 
+                    peripherals, and supplying power. 
+                </p>
+            </div>
+            <div class = "two">
+                    <iframe width="100%" height="auto"  src="https://www.youtube.com/embed/SU6fJSz2XEk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    Above is a video I made to explain this project and demenstrate it.
+                    <img src="config2_1.1_img.png">
+                    Above is a schematic of our design.
+            </div>
+        </section>
+        <section class = "container">
+            <div class = "one">
+                <h2>Python Image Morphing</h2>
+                <p>For the final Project of my Software Tools class in the 
+                    spring of 2019, I created a python script to morph two 
+                    images into eachother.
+                </p>
+                <p>This project involved the following:</p>
+                <ul>
+                    <li>Object Oriented Programming</li>
+                    <li>GUI design using the PyQt5 library</li>
+                    <li>Image manipulation using the Numpy and Scipy libraries</li>
+                    <li>Regular expression using the RE library</li>
+                </ul>
+            </div>
+            <div class = "two">
+                <img src="GUI.png">
+                Above is a view of the GUI after loading two images.
+                <img src="Blend.png">
+                Above is a view of the GUI displaying the triangles and
+                after morphing.
+            </div>
+        </section>
+        <section class = "container">
+            <div class = "one">
+                <h2>Senior Design</h2>
+                <p>
+                    For my senior design project the fall of 2019 me and my 
+                    group will be designing a network of data bouy.
+                </p>
+                <p> These bouys will be used to characterize an ocean area near a structure. The determined 
+                    characteristics could be used to findthe total impact load 
+                    on an offshore structure and assess how it compares to 
+                    the total load predicted during construction.
+                </p>
+            </div>
+            <div class = "two">
+                image not avalible
+            </div>
+        </section>
+        <section class = "container">
+            <div class = "one">
+                <h2>Sail Racing GPS</h2>
+                <p>Summer of 2019</p>
+            </div>
+            <div class = "two">
+
+            </div>
+        </section>
+    </div>
+    boat thing
+    <script>
+    function About(){
+        window.location.href = "./test.html";
+    }
+    function Projects(){
+        window.location.href = "./projects.html";
+    }
+    function Resume(){
+        window.location.href = "./resume2.html";
+    }
+    </script>
+</body>
+</html>
