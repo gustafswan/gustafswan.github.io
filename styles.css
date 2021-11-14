@@ -3,7 +3,7 @@ body{
     font-family: Arial;
     width: 7in;
     height: 9.5in;
-    margin-top: 1in;
+    margin-top: 0.25in;
     margin-bottom: 0.5in;
     margin-left: 0.5in;
     margin-right: 0.75in;
@@ -19,13 +19,13 @@ h1{
 }
 h2{
     margin:0;
-    margin-top:10pt;
+    margin-top:2pt;
     font-size: 18pt;
     font-weight: 600;
 }
 h3{
     margin: 0;
-    margin-top: 10pt;
+    margin-top: 3pt;
     margin-left: 15px;
     margin-bottom: 5px;
     font-size: 12pt;
@@ -41,7 +41,8 @@ h4{
 
 h6{
     margin:0;
-    margin-top:0.0625in;
+    margin-bottom:0.0625in;
+    margin-left:15px;
     font-weight: 100;
     font-size: 11pt;
     color: #125F6A;
