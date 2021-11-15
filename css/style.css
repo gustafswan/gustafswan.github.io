@@ -3,7 +3,13 @@ body {
   padding: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-size: cover;
-  background-color: #bbbbbb;
+  /* background-color: #bbbbbb; */
+ background: rgb(173,238,255); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(173,238,255,1) 0%, rgba(216,255,253,1) 28%, rgba(253,255,229,1) 75%, rgba(255,250,209,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(173,238,255,1) 0%,rgba(216,255,253,1) 28%,rgba(253,255,229,1) 75%,rgba(255,250,209,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(173,238,255,1) 0%,rgba(216,255,253,1) 28%,rgba(253,255,229,1) 75%,rgba(255,250,209,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#adeeff', endColorstr='#fffad1',GradientType=0 ); /* IE6-9 */
+
 }
 
 button {
@@ -72,15 +78,86 @@ img {
   margin-left: 51%;
   /* margin-left: 52%; */
   height: 100%;
-  background: #ffffff;
+  /* background: #ffffff; */
   opacity: 0.9;
-  border-radius: 6px;
-  border-style: inset;
-  border-color: #ffffff #444444 #444444 #ffffff;
+  /* border-radius: 6px; */
+  /* border-style: inset; */
+  /* border-color: #ffffff #444444 #444444 #ffffff; */
   padding: 5px;
 }
 
 .offset {
   height: 100px;
   background-color: black;
+}
+.header {
+  padding: 10px 0px;
+}
+.container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+  max-width: 1320px;
+}
+.col-lg-3 {
+  flex: 0 0 auto;
+  width: 25%;
+}
+.logo h2 a {
+  color: #8e43e7;
+}
+.logo h2 {
+  font-size: 35px;
+  font-weight: 900;
+  line-height: 1;
+  margin-top: 4px;
+}
+.row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(var(--bs-gutter-y) * -1);
+  margin-right: calc(var(--bs-gutter-x)/ -2);
+  margin-left: calc(var(--bs-gutter-x)/ -2);
+}
+.row > * {
+  flex-shrink: 0;
+  max-width: 100%;
+  padding-right: calc(var(--bs-gutter-x)/ 2);
+  padding-left: calc(var(--bs-gutter-x)/ 2);
+  margin-top: var(--bs-gutter-y);
+}
+.menu {
+  text-align: right;
+}
+nav, section {
+  display: block;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.menu ul {
+
+    display: block !important;
+
+}
+.menu ul li {
+  display: inline-block;
+}
+.menu ul li a {
+  position: relative;
+  padding: 10px 15px;
+  background-color: transparent;
+  color: #30343d;
+  font-weight: 700;
+  font-size: 16px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+}
+.profile {
+  border-radius: 50%;
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
 }
